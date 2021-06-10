@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+    <title>Getting Started:Login</title> 
+</head>
+<body>
+<form name="f" th:action="@{/api/auth/}" method="post" th:object="${form}">
+    <fieldset>
+            <p>Login to Convert page</p>
+            <p>
+                <input type="text" name="username" placeholder="UserName" th:required="required" autofocus="true"/>
+            </p>
+            <p>
+                <input type="password" name="password" placeholder="Password" th:required="required" />
+            </p>
+             <div class="form-actions">
+                    <button type="submit" class="btn">Log in</button>
+                </div>
+      </fieldset>
+    </form>
+</body>
+</html>
